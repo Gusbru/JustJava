@@ -78,10 +78,11 @@
 
         <Button
             android:id="@+id/button_order"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="0dp"
+            android:layout_gravity="center_horizontal"
             android:onClick="submitOrder"
             android:text="@string/button_order" />
 
@@ -112,12 +113,7 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button_reset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="resetOrder"
-            android:text="Clear" />
+
 
         <RelativeLayout
             android:id="@+id/order_message"
@@ -131,9 +127,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
-                android:text=""
+                android:text="message"
                 android:textAlignment="center"
                 android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="resetOrder"
+                android:text="Clear" />
 
         </RelativeLayout>
 
